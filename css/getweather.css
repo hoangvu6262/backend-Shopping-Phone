@@ -1,0 +1,186 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.3.2/css/weather-icons.min.css');
+a:hover,
+.active {
+    opacity: 1;
+}
+
+.more {
+    font-size: 14px;
+}
+
+.searchbar {
+    height: 20px;
+    padding: 0;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+}
+
+.searchbar {
+    margin: 0px;
+    float: left;
+    width: 200px;
+    border-bottom: solid thin white;
+    color: #E8E8E8;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.searchbar::-webkit-input-placeholder {
+    color: white;
+    opacity: 0.35;
+}
+
+.searchbar::-moz-placeholder {
+    color: white;
+    opacity: 0.35;
+}
+
+.searchbar:-ms-input-placeholder {
+    color: white;
+    opacity: 0.35;
+}
+
+.searchbar:-moz-placeholder {
+    color: white;
+    opacity: 0.35;
+}
+
+.button:focus,
+.searchbar:focus {
+    outline: none;
+    color: white;
+}
+
+.searchbar:focus::-webkit-input-placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+.searchbar:focus::-moz-placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+.searchbar:focus:-ms-input-placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+.searchbar:focus:-moz-placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+.button {
+    float: right;
+    width: 100px;
+}
+
+.panel {
+    width: 100%;
+    display: inline-block;
+}
+
+.weather {
+    width: 100%;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.city {
+    text-align: left;
+    text-transform: uppercase;
+    color: #E8E8E8;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.group {
+    width: 180px;
+    margin-bottom: 5px;
+    text-align: right;
+    float: right;
+    clear: both;
+}
+
+.temp {
+    font-size: 1.75em;
+    font-weight: 200;
+    line-height: 0.55;
+}
+
+.celsius,
+.fahrenheit,
+.divider {
+    font-size: 14px;
+    vertical-align: super;
+}
+
+.divider {
+    margin: 0 0.05em;
+}
+
+.forecast {
+    display: table;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.block {
+    display: table-cell;
+    padding: 1.0em 0 0 0;
+    text-align: center;
+}
+
+.high {
+    font-weight: 200;
+    margin: 0.25em 0;
+}
+
+.secondary {
+    opacity: 0.7;
+}
+
+.transparent {
+    background: transparent;
+}
+
+.hot {
+    background: #FF5722;
+}
+
+.warm {
+    background: #FF6F00;
+}
+
+.cool {
+    background: #2196F3;
+}
+
+.cold {
+    background: #3F51B5;
+}
+
+.color404 {
+    background: #161616;
+}
+
+.button-hot {
+    background: #BF360C;
+}
+
+.button-warm {
+    background: #B34E00;
+}
+
+.button-cool {
+    background: #0D47A1;
+}
+
+.button-cold {
+    background: #1A237E;
+}
+
+.button404 {
+    background: black;
+}
