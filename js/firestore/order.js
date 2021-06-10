@@ -11,6 +11,7 @@ orderRef.onSnapshot((snapshot) => {
   var content = "";
   var i = 0;
   data.forEach(function (item) {
+    console.log(item);
     var stringStatus;
     switch (item.status) {
       case "Pending":
@@ -24,7 +25,9 @@ orderRef.onSnapshot((snapshot) => {
     content += "<tr>";
     content += "<td>" + item.createdAt + "</td>";
     content += "<td>" + item.id.substring(0, 10) + "..." + "</td>";
+    content += "<td>" + item.nameUser + "</td>";
     content += "<td>" + item.phone + "</td>";
+    content += "<td>" + item.address + "</td>";
     content += "<td>" + item.amount + "</td>";
     content += "<td>" + stringStatus + "</td>";
     content +=
