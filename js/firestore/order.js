@@ -11,7 +11,7 @@ orderRef.onSnapshot((snapshot) => {
   var content = "";
   var i = 0;
   data.forEach(function (item) {
-    console.log(item);
+    // console.log(item);
     var stringStatus;
     switch (item.status) {
       case "Pending":

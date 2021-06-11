@@ -26,7 +26,7 @@
     <script src="./js/firestore/category.js"></script>
     <script src="./js/firestore/user.js"></script>
     <script src="./js/firestore/product.js"></script>
-    <script src="./js/firestore/chart.js"></script>
+    
     <script src="datatable/jquery.table2excel.js"></script>
 
     
@@ -298,8 +298,36 @@
                     </div>
                     <!-- Control Row -->
                     <div class="row">
-                        <div class="col-md-12">
-                            <canvas id="myChart" height="100px"></canvas>
+                        <div class="col-md-6">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <p class="m-0 font-weight-bold text-primary">Orders Report - thống kê đơn hàng </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="myChart" height="200px"></canvas>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <p class="m-0 font-weight-bold text-primary">Orders Report - thống kê đơn hàng </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="productChart" height="200px"></canvas>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -321,73 +349,18 @@
         <a class="scroll-to-top rounded" href="#page-top">
             <i class="fas fa-angle-up"></i>
         </a>
-        <!-- Logout Modal-->
-        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                    <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <a class="btn btn-primary" href="login.html">Logout</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-         <!-- End Logout Modal-->
-        <!-- Edit order -->
-        <div class="modal fade" id="editModel" role="dialog">
-            <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Update order</h5>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- code -->
-                        <div class="container">
-                            <div >
-                                <p>Order ID: </p>
-                                <input id="inputID" class="form-control" type="text" readonly>
-                            </div>
-                            <div >
-                                <p>Order Status: </p>
-                            <select class="custom-select" id="selectStatus">
-                                <option value="Pending">Pending</option>
-                                <option value="Success">Success</option>
-                            </select>
-                            <div >
-                        </div>
-                        <!-- end -->
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-primary" type="button" onclick="editOrder()" >Update</button>
-                        <button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End edit Order -->
+        
     </div>
 
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="js/sb-admin-2.min.js"></script>
-    
-    
+       
 
     <!-- Page level plugins -->
     <script src="vendor/datatables/jquery.dataTables.min.js"></script>
     <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="./js/firestore/chart.js"></script>
  
     
 
